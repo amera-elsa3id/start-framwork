@@ -4,12 +4,12 @@ import { useState } from "react"
 export default function Portfolio() {
   let [img,setImg]=useState()
   let [images,setImages] = useState([
-    {src:'src/assets/port/port1.png',id:"img1"},
-    {src:'src/assets/port/port2.png',id:"img2"},
-    {src:'src/assets/port/port3.png',id:"img3"},
-    {src:'src/assets/port/port1.png',id:"img4"},
-    {src:'src/assets/port/port2.png',id:"img5"},
-    {src:'src/assets/port/port3.png',id:"img6"},
+    {src:'./src/assets/port/port1.png',id:"img1"},
+    {src:'./src/assets/port/port2.png',id:"img2"},
+    {src:'./src/assets/port/port3.png',id:"img3"},
+    {src:'./src/assets/port/port1.png',id:"img4"},
+    {src:'./src/assets/port/port2.png',id:"img5"},
+    {src:'./src/assets/port/port3.png',id:"img6"},
   ])
   function changeImg(img){
    
@@ -36,7 +36,7 @@ export default function Portfolio() {
           </div>
         </div>)}
        {img? <div className="d-flex align-items-center justify-content-center position-fixed z-3  m-0 top-0 start-0 end-0 bottom-0 bg-blue-trans" onClick={()=>changeImg()}>
-          <img src={"./portfolio/"+img} alt="" className="w-25 rounded" />
+          <img src={img} alt="" className="w-25 rounded" />
         </div>:null}
         
       </div>

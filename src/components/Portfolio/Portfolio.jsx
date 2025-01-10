@@ -5,7 +5,7 @@ import img3 from "../../assets/port/port3.png"
 
 export default function Portfolio() {
   let [img,setImg]=useState()
-  let [images,setImages] = useState([
+  let [images,] = useState([
     {src:img1,id:"img1"},
     {src:img2,id:"img2"},
     {src:img3,id:"img3"},

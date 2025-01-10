@@ -1,15 +1,17 @@
 import { useState } from "react"
-
+import img1 from "../../assets/port/port1.png"
+import img2 from "../../assets/port/port2.png"
+import img3 from "../../assets/port/port3.png"
 
 export default function Portfolio() {
   let [img,setImg]=useState()
   let [images,setImages] = useState([
-    {src:'./src/assets/port/port1.png',id:"img1"},
-    {src:'./src/assets/port/port2.png',id:"img2"},
-    {src:'./src/assets/port/port3.png',id:"img3"},
-    {src:'./src/assets/port/port1.png',id:"img4"},
-    {src:'./src/assets/port/port2.png',id:"img5"},
-    {src:'./src/assets/port/port3.png',id:"img6"},
+    {src:img1,id:"img1"},
+    {src:img2,id:"img2"},
+    {src:img3,id:"img3"},
+    {src:img1,id:"img4"},
+    {src:img2,id:"img5"},
+    {src:img3,id:"img6"},
   ])
   function changeImg(img){
    
